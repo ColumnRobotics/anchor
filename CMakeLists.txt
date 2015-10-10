@@ -131,6 +131,10 @@ include_directories(
 
 ## Declare a C++ executable
 # add_executable(anchor_node src/anchor_node.cpp)
+# NOTE: flip node included here for reference (subscriber / publisher)
+add_executable(flip src/flip.cpp)
+target_link_libraries(flip ${catkin_LIBRARIES})
+add_dependencies(flip ${catkin_EXPORTED_TARGETS})
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above

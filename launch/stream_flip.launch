@@ -1,0 +1,7 @@
+<launch>
+  <machine name="local_alt" address="localhost" default="true" />
+  <node name="gscam" pkg="gscam" type="gscam" />
+  <node name="flip" pkg="ros_assignment" type="flip" />
+  <node name="flip_view" pkg="image_view" type="image_view" args="image:=/flipped_image" />
+  <node name="image_view" pkg="image_view" type="image_view" args="image:=/camera/image_raw" />
+</launch>
