@@ -10,6 +10,10 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   sensor_msgs
   std_msgs
+  move_base
+  openni2_launch
+  robot_localization
+  turtle_tf
 )
 
 ## System dependencies are found with CMake's conventions
