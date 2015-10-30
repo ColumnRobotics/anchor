@@ -38,6 +38,7 @@ int main(int argc, char **argv)
    * The ros::init() function needs to see argc and argv so that it can perform
    * any ROS arguments and name remapping that were provided at the command line.
    * The third argument to init() is the name of the node.
+   * hey look a comment. 
    */
   ros::init(argc, argv, "flip");
 

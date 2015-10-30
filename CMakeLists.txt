@@ -140,9 +140,14 @@ add_executable(flip src/flip.cpp)
 target_link_libraries(flip ${catkin_LIBRARIES})
 add_dependencies(flip ${catkin_EXPORTED_TARGETS})
 
+add_executable(ar_mover_Node_alpha src/ar_mover_Node_alpha.cpp)
+target_link_libraries(ar_mover_Node_alpha ${catkin_LIBRARIES})
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(anchor_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_dependencies(ar_mover_Node_alpha ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(anchor_node
