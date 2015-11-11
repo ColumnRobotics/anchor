@@ -139,6 +139,10 @@ add_dependencies(flip ${catkin_EXPORTED_TARGETS})
 add_executable(ar_mover_Node_alpha src/ar_mover_Node_alpha.cpp)
 target_link_libraries(ar_mover_Node_alpha ${catkin_LIBRARIES})
 
+add_executable(targetPosePublisher src/targetPosePublisher.cpp)
+target_link_libraries(targetPosePublisher ${catkin_LIBRARIES})
+add_dependencies(targetPosePublisher ${catkin_EXPORTED_TARGETS})
+
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(anchor_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
